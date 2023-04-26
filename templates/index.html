@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guessing Game</title>
+</head>
+<body>
+	<h1>Guess the Number</h1>
+	{% if result %}
+		<p>{{ result }}</p>
+	{% endif %}
+	<form method="POST">
+		<input type="number" name="guess" required>
+		<button type="submit">Guess</button>
+	</form>
+</body>
+</html>
